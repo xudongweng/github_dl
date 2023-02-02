@@ -1,6 +1,14 @@
 运行方式(以clickhouse为例)：
+
+```shell
 $ ./github_dl.sh
+```
+
+```shell
 imput repo: ClickHouse/ClickHouse
+```
+
+```shell
 ...
 tag list:
 v23.1.2.9-stable
@@ -33,8 +41,15 @@ v22.10.2.11-stable
 v22.3.14.23-lts
 v22.8.8.3-lts
 v22.10.1.1877-stable
+
 --------------------------------------------------------
+```
+
+```shell
 1.input download tag: v23.1 #可以模糊输入tag
+```
+
+```shell
 clickhouse-client-23.1.2.9-amd64.tgz
 clickhouse-client-23.1.2.9-amd64.tgz.sha512
 clickhouse-client-23.1.2.9-arm64.tgz
@@ -135,8 +150,17 @@ clickhouse-server-23.1.1.3077.aarch64.rpm
 clickhouse-server-23.1.1.3077.x86_64.rpm
 clickhouse-server_23.1.1.3077_amd64.deb
 clickhouse-server_23.1.1.3077_arm64.deb
+```
+
+```shell
 2.input download file name: x86_64.rpm #可以模糊输入需要的软件名
+```
+
+```shell
 3.do you want to directly download(y/n):n #输入y会直接进行下载
+```
+
+```shell
 curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.2.9-stable/clickhouse-client-23.1.2.9.x86_64.rpm
 curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.2.9-stable/clickhouse-common-static-23.1.2.9.x86_64.rpm
 curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.2.9-stable/clickhouse-common-static-dbg-23.1.2.9.x86_64.rpm
@@ -149,3 +173,4 @@ curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.1.30
 curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.1.3077-stable/clickhouse-keeper-23.1.1.3077.x86_64.rpm
 curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.1.3077-stable/clickhouse-keeper-dbg-23.1.1.3077.x86_64.rpm
 curl -O -L https://github.com/ClickHouse/ClickHouse/releases/download/v23.1.1.3077-stable/clickhouse-server-23.1.1.3077.x86_64.rpm
+```
